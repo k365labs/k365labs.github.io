@@ -29,6 +29,9 @@
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+  <base href="/" />
+  <script src="http://fusion-api.ddns.net:3000/assets/modules/channel-web/inject.js"></script>
 </head>
 
 <body class="site2" data-spy="scroll" data-target=".mainmenu-area">
@@ -832,6 +835,13 @@
   <script src="js/main.js"></script>
   <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXZ3vJtdK6aKAEWBovZFe4YKj1SGo9V20&callback=initMap"></script>-->
   <script src="js/maps.js"></script>
+  
+  <script>
+    window.botpressWebChat.init({
+      host: 'http://fusion-api.ddns.net:3000',
+      botId: 'orange'
+    })
+  </script>
 
 </body>
 
